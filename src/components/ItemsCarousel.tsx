@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 
-const ItemsCarousel = ({ heading } : { heading: string }) => {
+const ItemsCarousel = ({ heading, clothes } : { heading: string, clothes: string[] }) => {
   const settings = {
     dots: false,
     infinite: false,
@@ -13,24 +13,10 @@ const ItemsCarousel = ({ heading } : { heading: string }) => {
     <div className="mx-56 my-12">
       <div className="text-5xl">{ heading }</div>
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
+        { clothes.map((item: string, i: number) => {
+            return <img className="my-4" key={`item${i}`} src={item} alt="clothe" />
+          })
+        }
       </Slider>
     </div>
   )
