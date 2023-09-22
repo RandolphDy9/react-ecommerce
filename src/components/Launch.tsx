@@ -8,14 +8,14 @@ const Item = ({ image }: { image: string }) => {
   return (
     <div className="flex justify-between p-4 bg-white rounded-2xl">
       <div className="flex gap-4">
-        <div className="w-12">
-          <img src={image} alt="item-img" />
+        <div className="w-32 relative aspect-ratio-1/1">
+          <img src={image} alt="item-img" className="absolute inset-0 w-full h-full object-cover" />
         </div>
         <div>
-          <div>name</div>
-          <div className="flex gap-2">
-            <div className="bg-yellow-50 p-2">Free Shipping</div>
-            <div className="p-2 border">New</div>
+          <div className="text-lg font-semibold">Drape KL4</div>
+          <div className="flex gap-2 my-1">
+            <div className="text-sm bg-yellow-50 py-1 px-3 border">Free Shipping</div>
+            <div className="text-sm py-1 px-3 border">New</div>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@ const Launch = () => {
     <div className="py-16 px-32 bg-[#333333] rounded-2xl">
       <div className="flex justify-between bg-yellow-50 p-4 rounded-2xl">
         <div>
-          <div className="font-bold">Product Launch</div>
+          <div className="font-bold text-lg">Product Launch</div>
           <div>These are some of our upcoming products to be launch in a month.</div>
         </div>
         <div className="flex gap-4">

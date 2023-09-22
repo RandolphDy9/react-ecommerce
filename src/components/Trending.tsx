@@ -6,18 +6,18 @@ import Shirt5 from "../assets/image/shirts/shirt5.webp";
 const Item = ({ image }: { image: string }) => {
   return (
     <div className="p-4 flex justify-between bg-white my-2 rounded-2xl items-center">
-      <div className="flex justify-between gap-2">
+      <div className="flex justify-between items-center gap-2">
         <div className="w-9">
           <img src={image} alt="item-img" />
         </div>
         <div>
-          <div>Name</div>
-          <div>sales</div>
+          <div className="text-lg">Drape SG5</div>
+          {/* <div>Description?</div> */}
         </div>
       </div>
       <div className="flex gap-4">
-        <div>graph</div>
-        <div>price</div>
+        {/* <div>graph</div> */}
+        <div className="text-lg">P350.00</div>
       </div>
     </div>
   )

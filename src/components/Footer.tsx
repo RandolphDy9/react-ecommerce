@@ -1,11 +1,9 @@
+import Facebook from "../assets/icons/facebook.svg";
+import Instagram from "../assets/icons/instagram.svg";
 
 const Item = ({ item }: { item: string }) => {
   return <div className="text-sm my-2">{ item }</div>
 }
-
-// const Icon = ({ item }: { item: string }) => {
-//   return <div className="text-sm my-2">{ item }</div>
-// }
 
 const Footer = () => {
   return (
@@ -56,12 +54,13 @@ const Footer = () => {
         <div>
           Drape is inspired by Dribbble.
         </div>
-        <div className="flex mx-2">
-          <div>Icon 1</div>
-          <div>Icon 2</div>
-          <div>Icon 3</div>
-          <div>Icon 4</div>
-          <div>Icon 5</div>
+        <div className="flex gap-4">
+          <div>
+            <img src={Facebook} alt="icon-social" width="24" />
+          </div>
+          <div>
+            <img src={Instagram} alt="icon-social" width="24" />
+          </div>
         </div>
       </div>
       <div className="text-center">

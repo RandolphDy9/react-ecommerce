@@ -1,3 +1,5 @@
+import Heart from "../assets/icons/heart.svg";
+import Cart from "../assets/icons/cart.svg";
 
 const Navbar = () => {
   return (
@@ -8,9 +10,13 @@ const Navbar = () => {
       <div className="flex justify-between mx-12 py-6 items-center text-white">
         <div></div>
         <div className="text-5xl font-semibold">DRAPE!</div>
-        <div className="flex gap-4">
-          <div>Favorite</div>
-          <div>Cart</div>
+        <div className="flex gap-6">
+          <div>
+            <img src={Heart} alt="favorite-icon" width="24" />
+          </div>
+          <div>
+            <img src={Cart} alt="favorite-icon" width="24" />
+          </div>
         </div>
       </div>
     </div>
