@@ -22,14 +22,14 @@ import Shirt12 from "./assets/image/shirts/shirt12.webp";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#F0F0F0] dosis-font">
       <Navbar />
       <Jumbotron />
       <ItemsCarousel heading="Best Sellers" clothes={[Shirt1, Shirt2, Shirt3, Shirt4, Shirt5, Shirt6]} />
       <Categories />
       <Trending />
-      <ItemsCarousel heading="You Might Like" clothes={[Shirt7, Shirt8, Shirt9, Shirt10, Shirt11, Shirt12]} />
       <Launch />
+      <ItemsCarousel heading="You Might Like" clothes={[Shirt7, Shirt8, Shirt9, Shirt10, Shirt11, Shirt12]} />
       <Footer />
     </div>
   );

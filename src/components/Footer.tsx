@@ -9,7 +9,7 @@ const Item = ({ item }: { item: string }) => {
 
 const Footer = () => {
   return (
-    <div className="m-12 bg-gray-100 rounded-xl p-12">
+    <div className="mt-12 bg-[#333333] text-white rounded-t-2xl p-12">
       <div className="flex">
         <div className="w-1/3 text-4xl font-bold mx-8">
           <div>STAY UP TO DATE WITH NEWS, EVENTS AND MORE!</div>

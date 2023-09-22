@@ -5,7 +5,7 @@ import Cover4 from "../assets/image/cover/quote.jpg";
 
 const Item = ({ className, image }: { className: string, image: string }) => {
   return (
-    <div className={`${className} bg-gray-100 rounded-xl p-4 relative aspect-ratio-1/1`}>
+    <div className={`${className} bg-gray-100 rounded-2xl p-4 relative aspect-ratio-1/1`}>
       <img className="absolute inset-0 h-full w-full object-cover" src={image} alt="cover" />
     </div>
   )
@@ -13,7 +13,7 @@ const Item = ({ className, image }: { className: string, image: string }) => {
 
 const Categories = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-2 gap-4 mx-12 my-4">
+    <div className="grid grid-cols-4 grid-rows-2 gap-4 my-4 bg-[#333333] py-20 rounded-2xl">
       <Item className="col-span-2 row-span-2 h-96" image={Cover1} />
       <Item className="col-span-1 row-span-1" image={Cover2} />
       <Item className="col-span-1 row-span-1" image={Cover3} />

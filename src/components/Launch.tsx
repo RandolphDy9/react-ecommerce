@@ -6,7 +6,7 @@ import Rocket from "../assets/image/rocket.png";
 
 const Item = ({ image }: { image: string }) => {
   return (
-    <div className="flex justify-between p-4 bg-white rounded-xl">
+    <div className="flex justify-between p-4 bg-white rounded-2xl">
       <div className="flex gap-4">
         <div className="w-12">
           <img src={image} alt="item-img" />
@@ -25,10 +25,10 @@ const Item = ({ image }: { image: string }) => {
 
 const Launch = () => {
   return (
-    <div className="mx-56 py-16 px-32 bg-gray-100 rounded-xl">
-      <div className="flex justify-between bg-yellow-50 p-4 rounded-xl">
+    <div className="py-16 px-32 bg-[#333333] rounded-2xl">
+      <div className="flex justify-between bg-yellow-50 p-4 rounded-2xl">
         <div>
-          <div>Product Launch</div>
+          <div className="font-bold">Product Launch</div>
           <div>These are some of our upcoming products to be launch in a month.</div>
         </div>
         <div className="flex gap-4">
