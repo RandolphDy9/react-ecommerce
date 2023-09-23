@@ -18,10 +18,10 @@ const Jumbotron = () => {
   return (
     <div className="">
       <Slider {...settings}>
-          <img className="md:h-[40rem] object-cover rounded-b-2xl" src={Hero1} alt="hero1" />
-          <img className="md:h-[40rem] object-cover rounded-b-2xl" src={Hero2} alt="hero2" />
-          <img className="md:h-[40rem] object-cover rounded-b-2xl" src={Hero3} alt="hero3" />
-          <img className="md:h-[40rem] object-cover rounded-b-2xl" src={Hero4} alt="hero4" />
+          <img className="h-full md:h-[40rem] object-cover rounded-b-2xl" src={Hero1} alt="hero1" />
+          <img className="h-full md:h-[40rem] object-cover rounded-b-2xl" src={Hero2} alt="hero2" />
+          <img className="h-full md:h-[40rem] object-cover rounded-b-2xl" src={Hero3} alt="hero3" />
+          <img className="h-full md:h-[40rem] object-cover rounded-b-2xl" src={Hero4} alt="hero4" />
       </Slider>
     </div>
   );

@@ -13,11 +13,11 @@ const Item = ({ className, image }: { className: string, image: string }) => {
 
 const Categories = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-2 gap-4 my-4 bg-[#333333] py-20 rounded-2xl">
-      <Item className="col-span-2 row-span-2 h-96" image={Cover1} />
-      <Item className="col-span-1 row-span-1" image={Cover2} />
-      <Item className="col-span-1 row-span-1" image={Cover3} />
-      <Item className="col-span-2 row-span-1" image={Cover4} />
+    <div className="grid grid-cols-4 md:grid-rows-2 gap-4 my-4 bg-[#333333] py-20 rounded-2xl">
+      <Item className="md:col-span-2 md:row-span-2 h-96" image={Cover1} />
+      <Item className="md:col-span-1 md:row-span-1" image={Cover2} />
+      <Item className="md:col-span-1 md:row-span-1" image={Cover3} />
+      <Item className="md:col-span-2 md:row-span-1" image={Cover4} />
     </div>
   )
 }

@@ -25,19 +25,19 @@ const Item = ({ image }: { image: string }) => {
 
 const Launch = () => {
   return (
-    <div className="py-16 px-32 bg-[#333333] rounded-2xl">
-      <div className="flex justify-between bg-yellow-50 p-4 rounded-2xl">
+    <div className="py-16 px-6 md:px-32 bg-[#333333] rounded-2xl">
+      <div className="flex justify-between items-center bg-yellow-50 p-4 rounded-2xl">
         <div>
           <div className="font-bold text-lg">Product Launch</div>
           <div>These are some of our upcoming products to be launch in a month.</div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 mx-2">
           <div className="w-12">
             <img src={Rocket} alt="rocket-img" />
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 grid-rows-2 gap-4 my-4">
+      <div className="grid md:grid-cols-2 md:grid-rows-2 gap-4 my-4">
         <Item image={Shirt7} />
         <Item image={Shirt8} />
         <Item image={Shirt9} />

@@ -55,9 +55,9 @@ const Cards = () => {
 
 const Trending = () => {
   return (
-    <div className="mx-48 my-20">
+    <div className="mx-6 my-10 md:mx-48 md:my-20">
       <div className="text-5xl font-semibold">Trending</div>
-      <div className="my-4 flex justify-between gap-4">
+      <div className="my-4 flex justify-between flex-col md:flex-row gap-4">
         <ListItems />
         <Cards />
       </div>
