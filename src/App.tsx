@@ -19,17 +19,90 @@ import Shirt9 from "./assets/image/shirts/shirt9.webp";
 import Shirt10 from "./assets/image/shirts/shirt10.webp";
 import Shirt11 from "./assets/image/shirts/shirt11.webp";
 import Shirt12 from "./assets/image/shirts/shirt12.webp";
+import { useState } from "react";
+import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [openShoppingCart, setOpenShoppingCart] = useState<boolean>(false);
+
   return (
     <div className="bg-[#F0F0F0] dosis-font">
-      <Navbar />
+      {openShoppingCart && <Sidebar isOpen={openShoppingCart} />}
+      <Navbar onClick={() => setOpenShoppingCart(!openShoppingCart)} />
       <Jumbotron />
-      <ItemsCarousel heading="Best Sellers" clothes={[Shirt1, Shirt2, Shirt3, Shirt4, Shirt5, Shirt6]} />
+      <ItemsCarousel
+        heading="Best Sellers"
+        clothes={[
+          {
+            name: "Drape Tee v1",
+            price: 450,
+            imgSrc: Shirt1,
+          },
+          {
+            name: "Drape Xander v1",
+            price: 450,
+            imgSrc: Shirt2,
+          },
+          {
+            name: "Drape Vino v1",
+            price: 400,
+            imgSrc: Shirt3,
+          },
+          {
+            name: "Drape Dough v1",
+            price: 350,
+            imgSrc: Shirt4,
+          },
+          {
+            name: "Drape 23 v1",
+            price: 450,
+            imgSrc: Shirt5,
+          },
+          {
+            name: "Drape 5 v1",
+            price: 350,
+            imgSrc: Shirt6,
+          },
+        ]}
+      />
       <Categories />
       <Trending />
       <Launch />
-      <ItemsCarousel heading="You Might Like" clothes={[Shirt7, Shirt8, Shirt9, Shirt10, Shirt11, Shirt12]} />
+      <ItemsCarousel
+        heading="You Might Like"
+        clothes={[
+          {
+            name: "Drape Easy v1",
+            price: 400,
+            imgSrc: Shirt7,
+          },
+          {
+            name: "Drape Blizz v1",
+            price: 400,
+            imgSrc: Shirt8,
+          },
+          {
+            name: "Drape Pheno v1",
+            price: 450,
+            imgSrc: Shirt9,
+          },
+          {
+            name: "Drape 10 v1",
+            price: 350,
+            imgSrc: Shirt10,
+          },
+          {
+            name: "Drape 11 v1",
+            price: 350,
+            imgSrc: Shirt11,
+          },
+          {
+            name: "Drape 12 v1",
+            price: 350,
+            imgSrc: Shirt12,
+          },
+        ]}
+      />
       <Footer />
     </div>
   );
