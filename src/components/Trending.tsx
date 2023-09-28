@@ -10,7 +10,7 @@ import Card4 from "../assets/image/card/card4.jpg";
 
 const Item = ({ image, price }: { image: string, price: number }) => {
   return (
-    <div className="p-4 flex justify-between bg-white my-2 rounded-2xl items-center">
+    <div className="p-4 flex justify-between bg-white my-2 rounded-2xl items-center font-semibold">
       <div className="flex justify-between items-center gap-2">
         <div className="w-9">
           <img src={image} alt="item-img" />
@@ -22,7 +22,7 @@ const Item = ({ image, price }: { image: string, price: number }) => {
       </div>
       <div className="flex gap-4">
         {/* <div>graph</div> */}
-        <div className="text-lg">Php { price }</div>
+        <div className="text-lg text-red-600">Php { price }</div>
       </div>
     </div>
   )
