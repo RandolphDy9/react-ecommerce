@@ -1,12 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import Cart from "../assets/icons/cart.svg";
+import Bell from "../assets/icons/bell.svg";
 
 const Navbar = ({ onClick, items }: { onClick: () => void, items: number }) => {
   const navigate = useNavigate();
 
   return (
     <div className="bg-[#333333]">
-      <div className="w-full py-2 bg-yellow-100 text-center text-xs font-bold">
+      <div className="w-full py-2 bg-yellow-100 text-center text-sm font-bold flex gap-2 justify-center">
+        <img src={Bell} alt="bell-icon" width="20" />
         Price Change: Drape reacts to increased costs with a slight price increase
       </div>
       <div className="flex justify-between mx-12 py-6 items-center text-white">
