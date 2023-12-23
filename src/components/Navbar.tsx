@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import Cart from "../assets/icons/shopping-cart.png";
-import Bell from "../assets/icons/bell.svg";
 
 const Navbar = ({ logoIsWhite, onClick, items }: { logoIsWhite: boolean, onClick: () => void, items: number }) => {
   const navigate = useNavigate();
