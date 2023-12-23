@@ -72,7 +72,7 @@ const Cart = () => {
 
   const handleCheckout = async () => {
     console.log(cartItems);
-    await fetch("http://localhost:4000/checkout", {
+    await fetch("https://drape-be.onrender.com/checkout", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
