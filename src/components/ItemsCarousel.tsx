@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 
 type ShirtType = {
-  id: number;
+  id: string;
   name: string;
   price: number;
   oldPrice: number;
@@ -34,12 +34,12 @@ const ItemsCarousel = ({ heading, clothes }: ItemsType) => {
   };
   const navigate = useNavigate();
   return (
-    <div className="mx-6 my-10 md:mx-48 md:my-20">
+    <div className="px-6 py-10 md:px-48 md:py-20">
       <div className="text-3xl md:text-5xl font-semibold">{ heading }</div>
       <Slider {...settings}>
         { clothes.map((item: ShirtType, i: number) => {
           return (
-            <div key={`item${i}`} className="flex flex-col my-4 px-4 border overflow-x-hidden cursor-pointer hover:scale-105" onClick={() => navigate(`/${item.id}`)}>
+            <div key={`item${i}`} className="flex flex-col my-4 px-4 border overflow-x-hidden cursor-pointer hover:bg-gray-200" onClick={() => navigate(`/${item.id}`)}>
               <img src={item.imgSrc} alt="clothe" />
               <div className="flex justify-between flex-col font-semibold my-4">
                 <div>

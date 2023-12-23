@@ -13,7 +13,7 @@ import Shirt12 from "../assets/image/shirts/shirt12.webp";
 
 export const Items = [
   {
-    id: 101,
+    id: 'price_1OQcV4AbXRMhAWV6D9EJUfoB',
     name: "Drape Tee",
     price: 450,
     oldPrice: 500,
@@ -21,7 +21,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 102,
+    id: 'price_1OQcZnAbXRMhAWV6geHf4yLQ',
     name: "Drape Xander",
     price: 450,
     oldPrice: 500,
@@ -29,7 +29,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 103,
+    id: 'price_1OQcamAbXRMhAWV6VUCgYd8u',
     name: "Drape Vino",
     price: 400,
     oldPrice: 500,
@@ -37,7 +37,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 104,
+    id: 'price_1OQcblAbXRMhAWV6vr376pJr',
     name: "Drape Dough",
     price: 350,
     oldPrice: 500,
@@ -45,7 +45,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 105,
+    id: 'price_1OQccUAbXRMhAWV68yZa2nAy',
     name: "Drape 2xr",
     price: 450,
     oldPrice: 500,
@@ -53,7 +53,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 106,
+    id: 'price_1OQccyAbXRMhAWV6zkxNtHRR',
     name: "Drape 52",
     price: 350,
     oldPrice: 500,
@@ -61,7 +61,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 107,
+    id: 'price_1OQcdUAbXRMhAWV6WpBYZq3t',
     name: "Drape Easy",
     price: 400,
     oldPrice: 500,
@@ -69,7 +69,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 108,
+    id: 'price_1OQce3AbXRMhAWV6IcDX87xT',
     name: "Drape Blizz",
     price: 400,
     oldPrice: 500,
@@ -77,7 +77,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 109,
+    id: 'price_1OQceXAbXRMhAWV6DgBldOuO',
     name: "Drape Pheno",
     price: 450,
     oldPrice: 500,
@@ -85,7 +85,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 110,
+    id: 'price_1OQcewAbXRMhAWV6Lm1y84P0',
     name: "Drape X",
     price: 350,
     oldPrice: 500,
@@ -93,7 +93,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 111,
+    id: 'price_1OQcgcAbXRMhAWV6t6dztqh5',
     name: "Drape 11",
     price: 350,
     oldPrice: 500,
@@ -101,7 +101,7 @@ export const Items = [
     quantity: 0
   },
   {
-    id: 112,
+    id: 'price_1OQch5AbXRMhAWV6fo66hZQu',
     name: "Drape 12",
     price: 350,
     oldPrice: 500,

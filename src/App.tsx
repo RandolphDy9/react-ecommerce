@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Details from "./pages/Details";
 import Cart from "./pages/Cart";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import Success from "./pages/Success";
+import Clothes from "./pages/Clothes";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:id" element={<Details />} />
+          <Route path="/clothes" element={<Clothes />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
       </Router>
     </ShoppingCartProvider>

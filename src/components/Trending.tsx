@@ -49,7 +49,7 @@ const Card = ({ image }: { image: string }) => {
 
 const Cards = () => {
   return (
-    <div className="grid grid-cols-2 grid-rows-2 gap-2 md:w-full mx-6">
+    <div className="grid grid-cols-2 grid-rows-2 gap-6 md:w-full mx-6">
       <Card image={Card1} />
       <Card image={Card2} />
       <Card image={Card3} />

@@ -7,7 +7,7 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 import ItemsCarousel from "../components/ItemsCarousel";
 
 type CartItem = {
-  id: number;
+  id: string;
   name: string;
   price: number;
   oldPrice: number;
@@ -23,14 +23,14 @@ const Details = () => {
 
   useEffect(() => {
     if (id) {
-      const selectedItem = Items.find((item) => item.id === parseInt(id));
+      const selectedItem = Items.find((item) => item.id === id);
       setItem(selectedItem);
     }
   }, [cartItems, id]);
 
   return (
     <div className="bg-[#F0F0F0] dosis-font">
-      <Navbar onClick={() => navigate("/cart")} items={cartItems.length} />
+      <Navbar logoIsWhite={true} onClick={() => navigate("/cart")} items={cartItems.length} />
 
       <div className="m-6 md:m-20 flex md:gap-12 flex-col md:flex-row justify-center md:w-1/2 md:mx-auto">
         <div className="md:w-1/3">
@@ -65,7 +65,7 @@ const Details = () => {
         </div>
       </div>
 
-      <div className="md:mx-52">
+      <div className="md:mx-40">
         <ItemsCarousel heading="Other items you might like" clothes={Items.slice(3, 11)} />
       </div>
 
