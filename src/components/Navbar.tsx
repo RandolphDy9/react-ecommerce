@@ -7,7 +7,7 @@ const Navbar = ({ logoIsWhite, onClick, items }: { logoIsWhite: boolean, onClick
   return (
     <div className="">
       <div className="flex justify-between mx-12 py-6 items-center text-[#333333]">
-        <div className={`text-2xl font-semibold cursor-pointer ${ !logoIsWhite ? "text-white" : "text-[#333333]" }`} onClick={() => navigate('/')}>DRAPE</div>
+        <div className={`text-lg md:text-2xl font-semibold cursor-pointer ${ !logoIsWhite ? "text-white" : "text-[#333333]" }`} onClick={() => navigate('/')}>DRAPE</div>
         <div className="flex gap-6">
           <div className="text-lg font-semibold hover:text-red-600 cursor-pointer" onClick={() => navigate('/clothes')}>
             All Clothes

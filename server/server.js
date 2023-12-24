@@ -21,8 +21,8 @@ app.post("/checkout", async(req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: 'payment',
-    success_url: "http://localhost:5173/success",
-    cancel_url: "http://localhost:5173/cancelled"
+    success_url: "https://drape-clothing.netlify.app/success",
+    cancel_url: "https://drape-clothing.netlify.app/cancelled"
   });
 
   res.send(JSON.stringify({

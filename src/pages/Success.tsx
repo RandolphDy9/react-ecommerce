@@ -18,7 +18,7 @@ const Success = () => {
         <div className="text-3xl text-green-600 font-semibold">
           Order Confirmed!
         </div>
-        <div className="mx-20">
+        <div className="md:mx-20">
           Congratulations and a big thank you for choosing <b>Drape</b> for your
           fashion needs!
           <br /> We're thrilled to confirm that we've received your payment and
