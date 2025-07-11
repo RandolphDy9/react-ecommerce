@@ -1,8 +1,8 @@
-import Shirt7 from "../assets/image/shirts/shirt7.webp";
-import Shirt8 from "../assets/image/shirts/shirt8.webp";
-import Shirt9 from "../assets/image/shirts/shirt9.webp";
-import Shirt10 from "../assets/image/shirts/shirt10.webp";
-import Rocket from "../assets/image/rocket.png";
+import Shirt7 from "@/assets/image/shirts/shirt7.webp";
+import Shirt8 from "@/assets/image/shirts/shirt8.webp";
+import Shirt9 from "@/assets/image/shirts/shirt9.webp";
+import Shirt10 from "@/assets/image/shirts/shirt10.webp";
+import Rocket from "@/assets/image/rocket.png";
 
 const Item = ({ image }: { image: string }) => {
   return (

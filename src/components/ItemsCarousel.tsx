@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
+import StarIcon from "@/assets/icons/star.svg";
 
 type ShirtType = {
   id: string;
@@ -7,6 +8,7 @@ type ShirtType = {
   price: number;
   oldPrice: number;
   imgSrc: string;
+  rating: number;
 }
 
 type ItemsType = {
@@ -39,22 +41,26 @@ const ItemsCarousel = ({ heading, clothes }: ItemsType) => {
       <Slider {...settings}>
         { clothes.map((item: ShirtType, i: number) => {
           return (
-            <div key={`item${i}`} className="flex flex-col my-4 px-4 border overflow-x-hidden cursor-pointer hover:bg-gray-200" onClick={() => navigate(`/${item.id}`)}>
+            <div key={`item${i}`} className="flex flex-col my-2 py-4 px-4 border overflow-x-hidden cursor-pointer hover:bg-gray-100 hover:shadow relative" onClick={() => navigate(`/${item.id}`)}>
+              <div className="bg-red-600 text-white px-2 py-1 rounded-xl absolute top-4 left-8">{ ((item.oldPrice - item.price) / item.oldPrice) * 100 }%</div>
               <img src={item.imgSrc} alt="clothe" />
               <div className="flex justify-between flex-col font-semibold my-4">
                 <div>
-                  <div className="text-2xl">{item.name}</div>
+                  <div className="text-xl">{item.name}</div>
                 </div>
-                <div className="text-xl text-red-600">
-                  Php { item.price }
+                <div className="flex items-center space-x-1 my-2">
+                  {[...Array(item.rating)].map((_, i) => (
+                    <img src={StarIcon} key={i} className="w-4 h-4" />
+                  ))}
                 </div>
-                <div className="flex gap-2 text-xl text-gray-500">
-                  <div className="line-through">
-                    Php { item.oldPrice }
+                <div className="flex gap-2">
+                  <div className="text-2xl">
+                    Php { item.price }
                   </div>
-                  <div>-</div>
-                  <div>
-                    { ((item.oldPrice - item.price) / item.oldPrice) * 100 }%
+                  <div className="flex gap-2 text-lg text-gray-500">
+                    <div className="line-through">
+                      Php { item.oldPrice }
+                    </div>
                   </div>
                 </div>
               </div>

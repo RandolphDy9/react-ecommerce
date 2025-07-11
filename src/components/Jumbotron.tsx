@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import Shirt from "../assets/image/hero.png";
+import Shirt from "@/assets/image/hero.png";
 import { useEffect, useState } from "react";
 
 const Jumbotron = () => {

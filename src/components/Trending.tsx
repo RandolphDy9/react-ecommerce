@@ -1,16 +1,16 @@
-import Shirt1 from "../assets/image/shirts/shirt1.webp";
-import Shirt2 from "../assets/image/shirts/shirt2.webp";
-import Shirt4 from "../assets/image/shirts/shirt4.webp";
-import Shirt5 from "../assets/image/shirts/shirt5.webp";
+import Shirt1 from "@/assets/image/shirts/shirt1.webp";
+import Shirt2 from "@/assets/image/shirts/shirt2.webp";
+import Shirt4 from "@/assets/image/shirts/shirt4.webp";
+import Shirt5 from "@/assets/image/shirts/shirt5.webp";
 
-import Card1 from "../assets/image/card/card1.jpg";
-import Card2 from "../assets/image/card/card2.jpg";
-import Card3 from "../assets/image/card/card3.jpg";
-import Card4 from "../assets/image/card/card4.jpg";
+import Card1 from "@/assets/image/card/card1.jpg";
+import Card2 from "@/assets/image/card/card2.jpg";
+import Card3 from "@/assets/image/card/card3.jpg";
+import Card4 from "@/assets/image/card/card4.jpg";
 
 const Item = ({ image, price }: { image: string, price: number }) => {
   return (
-    <div className="p-4 flex justify-between bg-white my-2 rounded-2xl items-center font-semibold">
+    <div className="p-4 flex justify-between bg-white my-2 rounded-2xl items-center font-semibold hover:bg-gray-50">
       <div className="flex justify-between items-center gap-2">
         <div className="w-9">
           <img src={image} alt="item-img" />
@@ -22,7 +22,7 @@ const Item = ({ image, price }: { image: string, price: number }) => {
       </div>
       <div className="flex gap-4">
         {/* <div>graph</div> */}
-        <div className="text-lg text-red-600">Php { price }</div>
+        <div className="text-xl">Php { price }</div>
       </div>
     </div>
   )

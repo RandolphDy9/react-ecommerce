@@ -1,7 +1,7 @@
-import Cover1 from "../assets/image/cover/portrait.jpg";
-import Cover2 from "../assets/image/cover/male.jpg";
-import Cover3 from "../assets/image/cover/female.jpg";
-import Cover4 from "../assets/image/cover/quote.jpg";
+import Cover1 from "@/assets/image/cover/portrait.jpg";
+import Cover2 from "@/assets/image/cover/male.jpg";
+import Cover3 from "@/assets/image/cover/female.jpg";
+import Cover4 from "@/assets/image/cover/quote.jpg";
 
 const Item = ({ className, image }: { className: string, image: string }) => {
   return (

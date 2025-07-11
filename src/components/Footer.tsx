@@ -1,5 +1,5 @@
-import Facebook from "../assets/icons/facebook.svg";
-import Instagram from "../assets/icons/instagram.svg";
+import Facebook from "@/assets/icons/facebook.svg";
+import Instagram from "@/assets/icons/instagram.svg";
 
 const Item = ({ item }: { item: string }) => {
   return <div className="text-sm my-2 hover:text-gray-400 cursor-pointer">{ item }</div>

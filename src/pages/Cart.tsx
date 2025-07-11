@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import ItemsCarousel from "../components/ItemsCarousel";
 import { Items } from "../data/Data";
-import Trash from "../assets/icons/trash.svg";
+import Trash from "@/assets/icons/trash.svg";
 
 type CartItem = {
   id: string;

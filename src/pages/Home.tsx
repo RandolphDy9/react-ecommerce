@@ -1,3 +1,4 @@
+import SocialProof from "@/components/SocialProof";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import ItemsCarousel from "../components/ItemsCarousel";
@@ -21,6 +22,7 @@ const Home = () => {
         heading="You Might Like"
         clothes={Items.slice(6, 12)}
       />
+      <SocialProof />
       <Footer />
     </div>
   );
